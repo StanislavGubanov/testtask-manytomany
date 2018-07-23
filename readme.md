@@ -14,13 +14,13 @@ demonstrates Many-to-Many relations
 - JQuerry
 - Dependency managment - Maven
 
-##Installing
+## Installing
 
-#####Clone this repository
+##### Clone this repository
 -     git clone https://github.com/ErickAi/testtask-manytomany.git
 
-#####Package file (from project directory)
+##### Package file (from project directory)
 -     mvn clean package
 
-##Start application
+## Start application
 -     mvn spring-boot:run
