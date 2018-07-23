@@ -2,7 +2,7 @@
 
 Simple Web-application project 
 ==============================
-#####demonstrates Many-to-Many relations
+demonstrates Many-to-Many relations
 ## Implementation stack:
 - PostgreSQL
 - Hibernate
@@ -17,10 +17,10 @@ Simple Web-application project
 ##Installing
 
 #####Clone this repository
-     git clone https://github.com/ErickAi/testtask-manytomany.git
+-     git clone https://github.com/ErickAi/testtask-manytomany.git
 
 #####Package file (from project directory)
-     mvn clean package
+-     mvn clean package
 
 ##Start application
-     mvn spring-boot:run
+-     mvn spring-boot:run
