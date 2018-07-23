@@ -22,8 +22,13 @@ demonstrates Many-to-Many relations
 ##### Package file (from project directory)
      mvn clean package
 
+##### Prepare DataBase
+     create db manytomany (or change db name)
+     change uesrname and password in application.properties
+        (or use default username:user, password:password)
+
 ## Start application
      mvn spring-boot:run
      
-## application url
+##### application url
      http://localhost:8080/    
