@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('#btn_project_add').on("click", function (e) {
+    $("#btn_project_add").on("click", function (e) {
         e.preventDefault();
         var projectName = $("#project_name").val();
         if ($.trim(projectName).length < 2) {
@@ -21,7 +21,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.delete_project').on("click", function(e){
+    $(".delete_project").on("click", function(e){
         e.preventDefault();
         var empId = parseInt($(this).closest("td").attr("id"));
 
@@ -37,21 +37,5 @@ $(document).ready(function () {
                 }
             });
         }
-    });
-
-    $('.edit_project').on("click", function(e){
-        e.preventDefault();
-        var id = parseInt($(this).closest("td").attr("id"));
-
-        $.ajax({
-            type:"get",
-            url:"/project",
-            data:{id:empId},
-            success:function (data) {
-                $(".delete_project").closest("td#"+data).parent("tr").fadeOut("slow",function(){
-                    $(".delete_project").closest("td#"+data).parent("tr").remove();
-                });
-            }
-        });
     });
 });

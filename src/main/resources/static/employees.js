@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('#btn_employee_add').on("click", function (e) {
+    $("#btn_employee_add").on("click", function (e) {
         e.preventDefault();
         var employeeName = $("#employee_name").val();
         if ($.trim(employeeName).length < 2) {
@@ -21,7 +21,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.delete_employee').on("click", function(e){
+    $(".delete_employee").on("click", function(e){
         e.preventDefault();
         var empId = parseInt($(this).closest("td").attr("id"));
 
@@ -37,21 +37,5 @@ $(document).ready(function () {
                 }
             });
         }
-    });
-
-    $('.edit_employee').on("click", function(e){
-        e.preventDefault();
-        var id = parseInt($(this).closest("td").attr("id"));
-
-        $.ajax({
-            type:"get",
-            url:"/employee",
-            data:{id:empId},
-            success:function (data) {
-                $(".delete_employee").closest("td#"+data).parent("tr").fadeOut("slow",function(){
-                    $(".delete_employee").closest("td#"+data).parent("tr").remove();
-                });
-            }
-        });
     });
 });
