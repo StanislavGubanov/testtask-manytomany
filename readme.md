@@ -17,10 +17,13 @@ demonstrates Many-to-Many relations
 ## Installing
 
 ##### Clone this repository
--     git clone https://github.com/ErickAi/testtask-manytomany.git
+     git clone https://github.com/ErickAi/testtask-manytomany.git
 
 ##### Package file (from project directory)
--     mvn clean package
+     mvn clean package
 
 ## Start application
--     mvn spring-boot:run
+     mvn spring-boot:run
+     
+## application url
+     http://localhost:8080/    
