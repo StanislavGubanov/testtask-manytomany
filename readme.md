@@ -15,11 +15,12 @@ Simple Web-application project
 - Dependency managment - Maven
 
 ##Installing
-######Clone this repository
-    git clone https://github.com/ErickAi/testtask-manytomany.git
 
-######Package file (from project directory)
-    mvn clean package
+#####Clone this repository
+     git clone https://github.com/ErickAi/testtask-manytomany.git
+
+#####Package file (from project directory)
+     mvn clean package
 
 ##Start application
-    mvn spring-boot:run
+     mvn spring-boot:run
